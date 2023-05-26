@@ -9,9 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     // Properties storing the completion progress of the three rings
-    @State private var firstRingProgress: CGFloat = 0.0
-    @State private var secondRingProgress: CGFloat = 0.5
-    @State private var thirdRingProgress: CGFloat = 0.8
+    @State private var ringProgress: CGFloat = 0.0
     let circleLineWidth: CGFloat = 30
 
     var body: some View {
@@ -20,7 +18,7 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             /// The three circles are stacked in a ZStack. You can plug in whatever colors you need. Make sure to plug in the darker shade as the first color and the lighter shade as the second color. The radius of the circle will dictate how large it is and the line width will configure how thick the stroke of the circle is
-            ActivityRingView(progress: $firstRingProgress, gradientColors: [.darkRed, .lightRed], outlineColor: .outlineRed, radius: 150, lineWidth: circleLineWidth)
+            ActivityRingView(progress: $ringProgress, gradientColors: [.darkRed, .lightRed], outlineColor: .outlineRed, radius: 150, lineWidth: circleLineWidth)
                 .fixedSize()
 
             
@@ -28,9 +26,7 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 Button("Increment Ring") {
-                    firstRingProgress += 0.01
-                    secondRingProgress += 0.1
-                    thirdRingProgress += 0.1
+                    ringProgress += 0.01
                 }
                 .padding()
             }

@@ -17,7 +17,7 @@ struct DistrictDialsView: View {
                     ZStack {
                         Circle().stroke(Color.accentColor.opacity(0.5), lineWidth: 15)
                             .frame(width: 90, height: 90)
-                        Circle().trim(from: 0, to: 0.15).stroke(Color.accentColor, lineWidth: 15)
+                        Circle().trim(from: 0, to: 0.0).stroke(Color.accentColor, lineWidth: 15)
                             .frame(width: 90, height: 90)
                             .rotationEffect(.degrees(-90))
                         Text("\(districts.percentage)%")
