@@ -101,6 +101,13 @@ class AdventureProgressModel: ObservableObject {
         
         return Double(completedTasksCount) * increment
     }
+    
+    func updateAdventureCompletion(at index: Int, isCompleted: Bool) {
+        guard index >= 0 && index < adventures.count else {
+                    return
+                }
+        adventures[index].isComplete = isCompleted
+    }
 }
 
 
