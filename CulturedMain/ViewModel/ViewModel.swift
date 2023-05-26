@@ -86,7 +86,22 @@ class DistrictsViewModel: ObservableObject {
 }
 
 
-
+class AdventureProgressModel: ObservableObject {
+    private var adventures: [Adventure]
+    
+    init(adventures: [Adventure]) {
+        self.adventures = adventures
+    }
+    
+    var progress: Double {
+        let completedTasksCount = adventures.filter { $0.isComplete }.count
+        let totalAdventuresCount = adventures.count
+        let increment: Double = 1.0 / Double(totalAdventuresCount)
+        
+        
+        return Double(completedTasksCount) * increment
+    }
+}
 
 
 
