@@ -23,13 +23,12 @@ struct DistrictsView: View {
                 MapMarker(coordinate: location.coordinates)
             })
             .ignoresSafeArea()
-            BottomDrawerView()
-                
             VStack {
                 header
                     .padding()
                 Spacer()
             }
+            BottomDrawerView()
         }
     }
 }
@@ -101,39 +100,6 @@ extension DistrictsView {
     }
 }
 
-// DrawerView Code Here
-//extension DistrictsView {
-//    private var bottomDrawer: some View {
-//        ZStack {
-//            GeometryReader { proxy in
-//                ZStack {
-//                    //Blur Effect Here
-//                    BlurView(style: .systemThinMaterialDark)
-//                    VStack {
-//                        Text("Hola Amigos")
-//                        Spacer()
-//                    }
-//                }
-//            }
-//            //                .background(Color.red)
-//            .offset(y: offSet)
-//            .gesture(
-//                DragGesture()
-//                    .onChanged { value in
-//                        let startLocation = value.startLocation
-//                        offSet = startLocation.y + value.translation.height
-//                    }
-//            )
-//            .onAppear {
-//                if !isInitialOffsetSet {
-//                    offSet = UIScreen.main.bounds.height - 250
-//                    isInitialOffsetSet = true
-//                }
-//            }
-//        }
-//    }
-//}
-
 // Blurred View Here
 struct BlurView: UIViewRepresentable {
     let style: UIBlurEffect.Style
@@ -148,6 +114,11 @@ struct BlurView: UIViewRepresentable {
         // do nothing
     }
 }
+
+
+
+
+
 
 //import Foundation
 //
