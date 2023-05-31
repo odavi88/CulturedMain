@@ -50,12 +50,12 @@ class DistrictDataService {
         District(
             name: "Downtown",
             tasks: [
-                Adventure(description: "Shoot some hoops.", taskImage: "midwayHoopPic", completionPercentage: 0.0),
-                Adventure(description: "Have fun driving bumper cars.", taskImage: "midwayBumperPic", completionPercentage: 0.0),
-               Adventure(description: "Enjoy the view.", taskImage: "campusMartiusPic", completionPercentage: 0.0),
-                Adventure(description: "Check out some Art-Deco architecture.", taskImage: "guardianBuildingPic", completionPercentage: 0.0),
-                Adventure(description: "Check out this amazing fountain.", taskImage: "hartPlazaPic", completionPercentage: 0.0),
-                Adventure(description: "Go for a stroll.", taskImage: "detRiverfrontPic", completionPercentage: 0.0),
+                Adventure(description: "Shoot some hoops.", taskImage: "midwayHoopPic", completionPercentage: 0.0, isComplete: true),
+                Adventure(description: "Have fun driving bumper cars.", taskImage: "midwayBumperPic", completionPercentage: 0.0, isComplete: true),
+                Adventure(description: "Enjoy the view.", taskImage: "campusMartiusPic", completionPercentage: 0.0, isComplete: true),
+                Adventure(description: "Check out some Art-Deco architecture.", taskImage: "guardianBuildingPic", completionPercentage: 0.0, isComplete: false),
+                Adventure(description: "Check out this amazing fountain.", taskImage: "hartPlazaPic", completionPercentage: 0.0, isComplete: false),
+                Adventure(description: "Go for a stroll.", taskImage: "detRiverfrontPic", completionPercentage: 0.0, isComplete: true),
 
             ],
             coordinates: CLLocationCoordinate2D(latitude: 42.331456, longitude:  -83.046641),
@@ -73,10 +73,10 @@ class DistrictDataService {
         District(
             name: "Mexicantown",
             tasks: [
-                Adventure(description: "Grab a sweet pastry.", taskImage: "mexTownBakeryPic", completionPercentage: 0.0),
-                Adventure(description: "Grab some ice cream.", taskImage: "laMichoacanaTempPic", completionPercentage: 0.0),
-                Adventure(description: "Enjoy some Cuban food in the Mexicantown.", taskImage: "armandosTacoPic", completionPercentage: 0.0),
-                Adventure(description: "Check out this mural.", taskImage: "mexTownMuralPic", completionPercentage: 0.0),
+                Adventure(description: "Grab a sweet pastry.", taskImage: "mexTownBakeryPic", completionPercentage: 0.0, isComplete: true),
+                Adventure(description: "Grab some ice cream.", taskImage: "laMichoacanaTempPic", completionPercentage: 0.0, isComplete: true),
+                Adventure(description: "Enjoy some Cuban food in the Mexicantown.", taskImage: "armandosTacoPic", completionPercentage: 0.0, isComplete: true),
+                Adventure(description: "Check out this mural.", taskImage: "mexTownMuralPic", completionPercentage: 0.0, isComplete: false),
             ],
             coordinates: CLLocationCoordinate2D(latitude: 42.318751, longitude:  -83.095185),
             imageNames: [""],
@@ -84,10 +84,10 @@ class DistrictDataService {
         District(
             name: "Midtown",
             tasks: [
-                Adventure(description: "Take in some art.", taskImage: "diaThinkerPic", completionPercentage: 0.0),
-                Adventure(description: "Find a good book.", taskImage: "midwayHoopPic", completionPercentage: 0.0),
-                Adventure(description: "Learn some Detroit history.", taskImage: "detroitHistoricalMuseumPic", completionPercentage: 0.0),
-                Adventure(description: "Shoot some hoops in the middle of Downtown", taskImage: "midwayHoopPic", completionPercentage: 0.0),
+                Adventure(description: "Take in some art.", taskImage: "diaThinkerPic", completionPercentage: 0.0, isComplete: true),
+                Adventure(description: "Find a good book.", taskImage: "midwayHoopPic", completionPercentage: 0.0, isComplete: true),
+                Adventure(description: "Learn some Detroit history.", taskImage: "detroitHistoricalMuseumPic", completionPercentage: 0.0, isComplete: true),
+                Adventure(description: "Shoot some hoops in the middle of Downtown", taskImage: "midwayHoopPic", completionPercentage: 0.0, isComplete: true),
             ],
             coordinates: CLLocationCoordinate2D(latitude: 42.348495, longitude:  -83.060303),
             imageNames: [""],

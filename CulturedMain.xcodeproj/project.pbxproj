@@ -122,6 +122,7 @@
 		5DEB9E282A210B72002FF773 /* DistrictViews */ = {
 			isa = PBXGroup;
 			children = (
+				5DEB9E6C2A268D84002FF773 /* DrawerViews */,
 				5DEB9E292A210B9C002FF773 /* DistrcitView.swift */,
 				5DEB9E2B2A210BC0002FF773 /* DistrictsListView.swift */,
 				5DEB9E2D2A210BDC002FF773 /* TabButtonsView.swift */,
@@ -173,6 +174,13 @@
 				5DEB9E482A210DEB002FF773 /* Location.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5DEB9E6C2A268D84002FF773 /* DrawerViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DrawerViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

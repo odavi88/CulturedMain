@@ -12,6 +12,7 @@ import MapKit
 #warning("Is it possible for each of them to be reached with out access to car/ride-share?")
 
 struct DistrictsView: View {
+    @State private var offSet: CGFloat = 200
     @EnvironmentObject private var vm: DistrictsViewModel
     @ObservedObject var viewModel: LocationViewModel
     
@@ -20,6 +21,7 @@ struct DistrictsView: View {
             Map(coordinateRegion: $vm.mapRegion, annotationItems: viewModel.locations, annotationContent: { location in
                 MapMarker(coordinate: location.coordinates)
             })
+            bottomDrawer
                 .ignoresSafeArea()
             VStack {
                 header
@@ -97,6 +99,28 @@ extension DistrictsView {
     }
 }
 
+
+// DrawerView Code Here
+extension DistrictsView {
+    private var bottomDrawer: some View {
+        ZStack {
+            GeometryReader { proxy in
+                    VStack {
+                        
+                    }
+                }
+                .background(Color.red)
+                .offset(y: offSet)
+                .gesture(
+                    DragGesture()
+                        .onChanged { value in
+                            let startLocation = value.startLocation
+                            offSet = startLocation.y + value.translation.height
+                        }
+            )
+        }
+    }
+}
 
 //import Foundation
 //

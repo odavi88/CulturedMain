@@ -75,10 +75,11 @@ struct Adventure: Identifiable {
     let completionPercentage: Double
     var isComplete: Bool
     
-    init(description: String, taskImage: String, completionPercentage: Double) {
+    init(description: String, taskImage: String, completionPercentage: Double, isComplete: Bool) {
         self.description = description
         self.taskImage = taskImage
         self.completionPercentage = completionPercentage
+        self.isComplete = isComplete
     }
 }
 
