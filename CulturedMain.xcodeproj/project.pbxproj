@@ -25,6 +25,7 @@
 		5DEB9E432A210D86002FF773 /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E422A210D86002FF773 /* CategoryPickerView.swift */; };
 		5DEB9E462A210DB7002FF773 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E452A210DB7002FF773 /* ViewModel.swift */; };
 		5DEB9E492A210DEB002FF773 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E482A210DEB002FF773 /* Location.swift */; };
+		5DEB9E6E2A26DC35002FF773 /* BottomDrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E6D2A26DC35002FF773 /* BottomDrawerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		5DEB9E422A210D86002FF773 /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
 		5DEB9E452A210DB7002FF773 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5DEB9E482A210DEB002FF773 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		5DEB9E6D2A26DC35002FF773 /* BottomDrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomDrawerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 		5DEB9E6C2A268D84002FF773 /* DrawerViews */ = {
 			isa = PBXGroup;
 			children = (
+				5DEB9E6D2A26DC35002FF773 /* BottomDrawerView.swift */,
 			);
 			path = DrawerViews;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				5DEB9E462A210DB7002FF773 /* ViewModel.swift in Sources */,
 				5DEB9E2A2A210B9C002FF773 /* DistrcitView.swift in Sources */,
 				5DEB9E2E2A210BDC002FF773 /* TabButtonsView.swift in Sources */,
+				5DEB9E6E2A26DC35002FF773 /* BottomDrawerView.swift in Sources */,
 				5DEB9E3F2A210D37002FF773 /* TaskListView.swift in Sources */,
 				5DEB9E492A210DEB002FF773 /* Location.swift in Sources */,
 				5DEB9E3C2A210D04002FF773 /* DialContentViewExample.swift in Sources */,

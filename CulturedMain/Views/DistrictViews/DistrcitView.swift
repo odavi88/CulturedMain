@@ -12,7 +12,8 @@ import MapKit
 #warning("Is it possible for each of them to be reached with out access to car/ride-share?")
 
 struct DistrictsView: View {
-    @State private var offSet: CGFloat = 200
+//    @State private var offSet: CGFloat = 200
+//    @State private var isInitialOffsetSet: Bool = false
     @EnvironmentObject private var vm: DistrictsViewModel
     @ObservedObject var viewModel: LocationViewModel
     
@@ -21,8 +22,9 @@ struct DistrictsView: View {
             Map(coordinateRegion: $vm.mapRegion, annotationItems: viewModel.locations, annotationContent: { location in
                 MapMarker(coordinate: location.coordinates)
             })
-            bottomDrawer
-                .ignoresSafeArea()
+            .ignoresSafeArea()
+            BottomDrawerView()
+                
             VStack {
                 header
                     .padding()
@@ -36,7 +38,7 @@ struct LocationsView_Previews: PreviewProvider {
     static var previews: some View {
         DistrictsView(viewModel: LocationViewModel(locations: [Location(name: "", services: [""], coordinates: CLLocationCoordinate2D(latitude: 42.3319, longitude:  -83.0466), imageNames: [""], link: "")]))
             .environmentObject(DistrictsViewModel())
-    
+        
         DistrictsView(viewModel: LocationViewModel(locations: [Location(name: "", services: [""], coordinates: CLLocationCoordinate2D(latitude: 42.3319, longitude:  -83.0466), imageNames: [""], link: "")]))
             .environmentObject(DistrictsViewModel())
             .preferredColorScheme(.dark)
@@ -59,7 +61,7 @@ extension DistrictsView {
     private var header: some View {
         HStack(alignment: .top) {
             VStack {
-                #warning("Make drop down list smaller.")
+#warning("Make drop down list smaller.")
                 // District Drop Down List Button
                 Button(action: vm.toggleDistrictsList) {
                     Text(vm.mapLocation.name)
@@ -88,37 +90,62 @@ extension DistrictsView {
             }
             .background(.thickMaterial)
             .cornerRadius(10)
-        .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 15)
+            .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 15)
             
-                        TabButtonsView()
+            TabButtonsView()
             
             Spacer()
             // Tab Bar will go here
-//            TabBarView()
+            //            TabBarView()
         }
     }
 }
 
-
 // DrawerView Code Here
-extension DistrictsView {
-    private var bottomDrawer: some View {
-        ZStack {
-            GeometryReader { proxy in
-                    VStack {
-                        
-                    }
-                }
-                .background(Color.red)
-                .offset(y: offSet)
-                .gesture(
-                    DragGesture()
-                        .onChanged { value in
-                            let startLocation = value.startLocation
-                            offSet = startLocation.y + value.translation.height
-                        }
-            )
-        }
+//extension DistrictsView {
+//    private var bottomDrawer: some View {
+//        ZStack {
+//            GeometryReader { proxy in
+//                ZStack {
+//                    //Blur Effect Here
+//                    BlurView(style: .systemThinMaterialDark)
+//                    VStack {
+//                        Text("Hola Amigos")
+//                        Spacer()
+//                    }
+//                }
+//            }
+//            //                .background(Color.red)
+//            .offset(y: offSet)
+//            .gesture(
+//                DragGesture()
+//                    .onChanged { value in
+//                        let startLocation = value.startLocation
+//                        offSet = startLocation.y + value.translation.height
+//                    }
+//            )
+//            .onAppear {
+//                if !isInitialOffsetSet {
+//                    offSet = UIScreen.main.bounds.height - 250
+//                    isInitialOffsetSet = true
+//                }
+//            }
+//        }
+//    }
+//}
+
+// Blurred View Here
+struct BlurView: UIViewRepresentable {
+    let style: UIBlurEffect.Style
+    
+    func makeUIView(context: Context) -> UIVisualEffectView {
+        let view = UIVisualEffectView(effect: UIBlurEffect(style: style))
+        
+        return view
+    }
+    
+    func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
+        // do nothing
     }
 }
 
