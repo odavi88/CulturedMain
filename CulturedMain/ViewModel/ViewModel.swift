@@ -46,7 +46,14 @@ class DistrictsViewModel: ObservableObject {
     // Navigation between Map and Tasks List
     @Published var showTaskListView = false
     
+    // Shows Progress Dials
     @Published var showProgressView = false
+    
+    // Show Location Options
+    @Published var showOptions = false
+    
+    // MARK: For Selected Views Segmented Picker
+    @Published var selectedViewCategory: ViewCategories = .tasks
     
     init() {
         // add annotations here

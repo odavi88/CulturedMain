@@ -13,15 +13,21 @@ struct BottomDrawerView: View {
     @State private var isInitialOffsetSet: Bool = false
     var body: some View {
         ZStack {
+            //            Color.yellow
+            //                .ignoresSafeArea()
             GeometryReader { proxy in
+                //Blur Effect Here
+                BlurView(style: .systemUltraThinMaterial)
+                
                 ZStack {
-                    //Blur Effect Here
-                    BlurView(style: .systemUltraThinMaterial)
-                    VStack {
-                        CapsuleView()
-                        Spacer()
-                    // TabButtonView Here
-                    }
+//                    SegmentedButtonView()
+                    
+                    // MARK: Actual PickerButton
+                    SegmentedPickerView()
+                        .padding(.top)
+                   
+//                    CapsuleView()
+//                    Spacer()
                 }
             }
             .offset(y: offSet)
@@ -34,7 +40,7 @@ struct BottomDrawerView: View {
             )
             .onAppear {
                 if !isInitialOffsetSet {
-                    offSet = UIScreen.main.bounds.height - 250
+                    offSet = UIScreen.main.bounds.height - 465
                     isInitialOffsetSet = true
                 }
             }

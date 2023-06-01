@@ -27,13 +27,14 @@ struct TabButtonsView: View {
     
     var body: some View {
         
+        // Activity list View Button
         VStack {
             VStack(spacing: 10) {
                 Button(action: {
                     vm.showTaskListView = true
                 }) {
                     Image(systemName: "list.clipboard")
-                        .font(.system(size: 30))
+                        .font(.system(size: 25))
                         .minimumScaleFactor(0.5)
                         .padding()
                         .background(.thinMaterial)
@@ -53,7 +54,7 @@ struct TabButtonsView: View {
                     }) {
                         Image(systemName: "trophy")
                             .foregroundColor(.primary)
-                            .font(.system(size: 30))
+                            .font(.system(size: 25))
                             .minimumScaleFactor(0.5)
                             .padding()
                             .background(.thinMaterial)
@@ -69,7 +70,7 @@ struct TabButtonsView: View {
                     SuggestionsListView()
                 }) {
                     Image(systemName: "building.2.crop.circle")
-                        .font(.system(size: 30))
+                        .font(.system(size: 25))
                         .minimumScaleFactor(0.5)
                         .padding()
                         .background(.thinMaterial)

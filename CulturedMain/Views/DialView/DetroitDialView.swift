@@ -23,7 +23,7 @@ struct DetroitDialView: View {
                     .font(.subheadline)
             }
             
-            Text("Detroit")
+            Text("Total")
                 .font(.title)
         }
     }

@@ -22,10 +22,15 @@
 		5DEB9E3C2A210D04002FF773 /* DialContentViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E3B2A210D04002FF773 /* DialContentViewExample.swift */; };
 		5DEB9E3F2A210D37002FF773 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E3E2A210D37002FF773 /* TaskListView.swift */; };
 		5DEB9E412A210D5A002FF773 /* CompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E402A210D5A002FF773 /* CompletedView.swift */; };
-		5DEB9E432A210D86002FF773 /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E422A210D86002FF773 /* CategoryPickerView.swift */; };
 		5DEB9E462A210DB7002FF773 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E452A210DB7002FF773 /* ViewModel.swift */; };
 		5DEB9E492A210DEB002FF773 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E482A210DEB002FF773 /* Location.swift */; };
 		5DEB9E6E2A26DC35002FF773 /* BottomDrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E6D2A26DC35002FF773 /* BottomDrawerView.swift */; };
+		5DEB9E702A27BE05002FF773 /* TabViewBottons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E6F2A27BE05002FF773 /* TabViewBottons.swift */; };
+		5DEB9E732A27C0EC002FF773 /* TabViewDrawerButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E722A27C0EC002FF773 /* TabViewDrawerButtons.swift */; };
+		5DEB9E752A289FBD002FF773 /* SegmentedButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E742A289FBD002FF773 /* SegmentedButtonsView.swift */; };
+		5DEB9E782A28A353002FF773 /* ViewCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E772A28A353002FF773 /* ViewCategories.swift */; };
+		5DEB9E7B2A28A55E002FF773 /* SegmentedPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E7A2A28A55E002FF773 /* SegmentedPickerView.swift */; };
+		5DEB9E7D2A28A7C4002FF773 /* NewTaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB9E7C2A28A7C4002FF773 /* NewTaskListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +51,15 @@
 		5DEB9E3B2A210D04002FF773 /* DialContentViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialContentViewExample.swift; sourceTree = "<group>"; };
 		5DEB9E3E2A210D37002FF773 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		5DEB9E402A210D5A002FF773 /* CompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedView.swift; sourceTree = "<group>"; };
-		5DEB9E422A210D86002FF773 /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
 		5DEB9E452A210DB7002FF773 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5DEB9E482A210DEB002FF773 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		5DEB9E6D2A26DC35002FF773 /* BottomDrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomDrawerView.swift; sourceTree = "<group>"; };
+		5DEB9E6F2A27BE05002FF773 /* TabViewBottons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewBottons.swift; sourceTree = "<group>"; };
+		5DEB9E722A27C0EC002FF773 /* TabViewDrawerButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewDrawerButtons.swift; sourceTree = "<group>"; };
+		5DEB9E742A289FBD002FF773 /* SegmentedButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedButtonsView.swift; sourceTree = "<group>"; };
+		5DEB9E772A28A353002FF773 /* ViewCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCategories.swift; sourceTree = "<group>"; };
+		5DEB9E7A2A28A55E002FF773 /* SegmentedPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPickerView.swift; sourceTree = "<group>"; };
+		5DEB9E7C2A28A7C4002FF773 /* NewTaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,7 @@
 		5DEB9E142A210AE2002FF773 /* CulturedMain */ = {
 			isa = PBXGroup;
 			children = (
+				5DEB9E712A27C0C2002FF773 /* PlayFiles */,
 				5DEB9E472A210DD7002FF773 /* Models */,
 				5DEB9E442A210DA4002FF773 /* ViewModel */,
 				5DEB9E272A210B67002FF773 /* Views */,
@@ -157,7 +168,6 @@
 			children = (
 				5DEB9E3E2A210D37002FF773 /* TaskListView.swift */,
 				5DEB9E402A210D5A002FF773 /* CompletedView.swift */,
-				5DEB9E422A210D86002FF773 /* CategoryPickerView.swift */,
 			);
 			path = TaskListViews;
 			sourceTree = "<group>";
@@ -174,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				5DEB9E482A210DEB002FF773 /* Location.swift */,
+				5DEB9E772A28A353002FF773 /* ViewCategories.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,9 +192,29 @@
 		5DEB9E6C2A268D84002FF773 /* DrawerViews */ = {
 			isa = PBXGroup;
 			children = (
+				5DEB9E792A28A537002FF773 /* SegmentedViewPickerView */,
 				5DEB9E6D2A26DC35002FF773 /* BottomDrawerView.swift */,
 			);
 			path = DrawerViews;
+			sourceTree = "<group>";
+		};
+		5DEB9E712A27C0C2002FF773 /* PlayFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5DEB9E6F2A27BE05002FF773 /* TabViewBottons.swift */,
+				5DEB9E722A27C0EC002FF773 /* TabViewDrawerButtons.swift */,
+				5DEB9E742A289FBD002FF773 /* SegmentedButtonsView.swift */,
+				5DEB9E7C2A28A7C4002FF773 /* NewTaskListView.swift */,
+			);
+			path = PlayFiles;
+			sourceTree = "<group>";
+		};
+		5DEB9E792A28A537002FF773 /* SegmentedViewPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				5DEB9E7A2A28A55E002FF773 /* SegmentedPickerView.swift */,
+			);
+			path = SegmentedViewPickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,19 +291,24 @@
 				5DEB9E262A210B53002FF773 /* DataServices.swift in Sources */,
 				5DEB9E412A210D5A002FF773 /* CompletedView.swift in Sources */,
 				5DEB9E3A2A210CE7002FF773 /* ColorExtentionExample.swift in Sources */,
+				5DEB9E7D2A28A7C4002FF773 /* NewTaskListView.swift in Sources */,
 				5DEB9E382A210CC7002FF773 /* ProgressRingExample.swift in Sources */,
 				5DEB9E462A210DB7002FF773 /* ViewModel.swift in Sources */,
 				5DEB9E2A2A210B9C002FF773 /* DistrcitView.swift in Sources */,
 				5DEB9E2E2A210BDC002FF773 /* TabButtonsView.swift in Sources */,
 				5DEB9E6E2A26DC35002FF773 /* BottomDrawerView.swift in Sources */,
 				5DEB9E3F2A210D37002FF773 /* TaskListView.swift in Sources */,
+				5DEB9E732A27C0EC002FF773 /* TabViewDrawerButtons.swift in Sources */,
+				5DEB9E7B2A28A55E002FF773 /* SegmentedPickerView.swift in Sources */,
+				5DEB9E702A27BE05002FF773 /* TabViewBottons.swift in Sources */,
+				5DEB9E782A28A353002FF773 /* ViewCategories.swift in Sources */,
 				5DEB9E492A210DEB002FF773 /* Location.swift in Sources */,
 				5DEB9E3C2A210D04002FF773 /* DialContentViewExample.swift in Sources */,
 				5DEB9E312A210C1C002FF773 /* SuggestedLocationsViews.swift in Sources */,
 				5DEB9E342A210C7E002FF773 /* DistrictsDialsViews.swift in Sources */,
 				5DEB9E362A210CA9002FF773 /* DetroitDialView.swift in Sources */,
-				5DEB9E432A210D86002FF773 /* CategoryPickerView.swift in Sources */,
 				5DEB9E162A210AE2002FF773 /* CulturedMainApp.swift in Sources */,
+				5DEB9E752A289FBD002FF773 /* SegmentedButtonsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -91,11 +91,7 @@ extension DistrictsView {
             .cornerRadius(10)
             .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 15)
             
-            TabButtonsView()
-            
-            Spacer()
-            // Tab Bar will go here
-            //            TabBarView()
+//            TabButtonsView()
         }
     }
 }
